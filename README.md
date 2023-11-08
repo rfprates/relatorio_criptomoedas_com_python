@@ -25,8 +25,36 @@ Obs: para executar o código corretamente as bibliotecas listadas na sessão ant
 
 ### Gráficos utilizando Matplotlib
 
-Seguem abaixo os gráficos gerados a partir dos dados de preços do Bitcoin ao longo de um período de 6 meses.
+Seguem abaixo os gráficos gerados a partir dos dados de preços do Bitcoin ao longo de um período de 6 meses, utilizando a biblioteca de visualização de dados Matplotlib.
 
-- Gráfico de análise da oscilação dos preços de fechamento
+- Gráfico de análise da oscilação dos preços de fechamento.
 
+![close_matplotlib.png](graph_results/close_matplotlib.png)
 
+- Gráfico de análise da oscilação os preços de fechamento com a curva de tendência das médias móveis de 5 dias e 25 dias.
+
+![close_moving_average_matplotlib.png](graph_results/close_moving_average_matplotlib.png)
+
+### Gráficos utlizando Plotly
+
+Seguem abaixo os gráficos gerados utilizando a biblioteca de visualização de dados Plotly.
+
+- Gráfico de análise da oscilação os preços de fechamento com a curva de tendência das médias móveis de 5 dias.
+
+![close_moving_average_plotly.png](graph_results/close_moving_average_plotly.png)
+
+- Gráfico Candlestick utilizando os dados de abertura, fechamento além dos preços mais altos e baixos por dia do Bitcoin durante todos os dias do período analisado.
+
+![candlestick_plotly.png](graph_results/candlestick_plotly.png)
+
+## Relatório final
+
+Neste relatório final, foi criado um dashboard utilizando os gráficos em plotly, tanto candlestick mostrando a oscilação da cotação do bitcoin ao longo dos 6 meses, quanto o gráfico de fechamento com as médias móveis.
+
+Para tal, utilizou-se da função make_subplots( ) da biblioteca Plotly, onde por meio desta é possível fazer mais de um gráfico no mesmo objeto, definindo-se o número de linhas e colunas necessárias, os títulos e etc.
+
+Segue abaixo uma visualização do dashboard produzido.
+
+![dashboard](dashboard/dashboard.png)
+
+Ao final do projeto, este dashboard presente acima foi exportado em um arquivo pdf "Report_Financeiro.pdf" presente nos arquivos deste repositório.
